@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+require 'json'
+
+data = JSON.parse(File.read('transformers.json'))['transformers']
+json = []
+count = 0
+
+def sanitize val
+  val.sub('\(.*', '').gsub(/[’"'` ]/, '').gsub(/\s/, '_').strip
+end
+
+data.each do |item|
+  # break if count >= 250
+  item['email'] = sanitize(item['name']) << '-' << item['year'].to_s << '@' << sanitize(item['alliance']) << '.com'
+
+  json << item
+  count += 1
+  p "#{count}: #{item['email']}"
+end
+
+p "Total count #{json.count}"
+
+File.open('250_transformers.json', 'w') do |f|
+  output = {contacts: json}
+  f.puts output.to_json
+end

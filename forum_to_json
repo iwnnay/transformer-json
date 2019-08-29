@@ -135,7 +135,6 @@ File.open('forum_pruned.txt', 'r').each do |rawLine|
     alliance = Extract.alliance line
   elsif line[-1] == ':'
     team = Extract.team line
-    p "setting team: #{team}"
   else
     name, nickname = Extract.nameAndAlias line
 
