@@ -155,5 +155,6 @@ File.open('forum_pruned.txt', 'r').each do |rawLine|
 end
 
 File.open('transformers.json', 'w') do |f|
-  f.puts [transformers: transformers].to_json
+  json = {transformers: transformers}
+  f.puts json.to_json
 end
