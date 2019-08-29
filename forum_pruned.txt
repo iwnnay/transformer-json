@@ -1,11 +1,7 @@
-List of Transformers Characters by Continuity and Series
-While there are many lists of toys out there, and lists of characters by individual series, I’ve never seen a list of all characters without having the hassle of seeing twenty-five entries of Movie Optimus Prime. So, without further ado, here is the list, sorted by continuity, then sorted by series, then by the year the character first appeared in either toy form or fictional form. For the benefit of anyone who wants to see everybody in one big chunk of list. Did I miss anyone?
-
-##The Transformers (a.k.a. Generation One)##
-The series that started it off was known as simply ‘The Transformers’. After a major toyline spanning some six years, it spawned off a lot of Japanese-exclusive spin-off sequels, before finally re-emerging as a new sequel toyline, ‘Generation Two’. After Generation Two, Transformers re-launched with a new soft reboot in the highly popular ‘Beast Wars’ series, as well as its successor ‘Beast Machines’. While after Beast Machines the G1 continuity would be eschewed in favour of reboots and material based on Japanese-dubbed shows, G1 continues strong, with supplementary toys from the Universe line and Japanese-exclusive e-Hobby characters being integrated into part of the G1 mythos. G1 returned in full force as a nostalgia line with ‘Classics’, ‘Universe 2.0’, ‘Generations’ and several other lines.
+##Generation One##
 
 1984 (The Transformers)
-Autobots
+Autobots:
 -Optimus Prime
 -Bluestreak (a.k.a. Silverstreak)
 -Brawn
@@ -34,7 +30,7 @@ Dinobots:
 -Snarl
 -Swoop
 
-Decepticons
+Decepticons:
 -Megatron
 -Shockwave
 -Starscream
@@ -253,7 +249,6 @@ Monsterbots:
 -Doublecross
 -Grotusque
 -Repugnus
-[Japan-exclusive Headmasters line]
 Trainbots:
 -Shouki
 -Getsuei
@@ -354,11 +349,10 @@ Sparkler Minibots:
 -Fizzle
 -Guzzle
 -Sizzle
-Cassettebot Combiner
+Cassettebot Combiner:
 -Grand Slam
 -Raindance
 -Slamdance
-[Japan-exclusive Super-God Masterforce line]
 -Sixknight
 Godmasters:
 -Ginrai (a.k.a. God Ginrai)
@@ -432,7 +426,6 @@ Cassttecon Combiner:
 -Beastbox
 -Squawktalk
 -Squawkbox
-[Japan-exclusive Super-God Masterforce line]
 -Black Zarak
 -Black Rorichi
 -Browning
@@ -517,7 +510,6 @@ Matrix Bearers:
 -Alpha Prime
 -Prime Nova
 -Sentinel Prime
-[Japan-exclusive Victory line]
 -Star Saber
 -Victory Leo
 -Victory Saber
@@ -579,7 +571,6 @@ Micromaster Bases:
 -Greasepit
 -Roughstuff
 -Skyhopper
-[Japan-exclusive Victory line]
 -Deathsaurus
 Breastforce:
 -Leozak
@@ -671,7 +662,6 @@ Combiner Micromaster Bases:
 -Pipeline
 -Retro
 -Surge
-[Japan-exclusive Zone line]
 -Dai Atlas
 -Sonic Bomber
 -Road Fire
@@ -747,7 +737,7 @@ Military Patrol:
 -Dropshot
 -Growl
 -Tracer
-Race Car Patrol
+Race Car Patrol:
 -Barricade
 -Ground Hog
 -Motorhead
@@ -771,7 +761,6 @@ Combiner Micromaster Bases:
 -Spaceshot
 -Cement-Head
 -Terror-Tread
-[Exclusive to the Japanese Zone line]
 Metrotitan:
 -Metrotitan
 -Metrobomb
@@ -811,7 +800,6 @@ Motorvators:
 -Flame
 -Gripper
 -Lightspeed
-[Exclusive to the Japanese Return of Convoy line]
 -Grandus
 -Sky Garry
 Micromasters:
@@ -894,7 +882,6 @@ Turbomasters:
 -Flash
 -Hurricane
 -Scorch
-[Exclusive to the Japanese Operation Combination line]
 Road Corps:
 -Checker Road
 -Fire Road
@@ -931,7 +918,7 @@ Team Sixturbo:
 -Road Police
 -Sireen
 -Sixturbo
-Team Sixwing
+Team Sixwing:
 -Chaingun
 -Falcon
 -Flanker
@@ -948,7 +935,6 @@ Predators:
 -Skydive
 -Snare
 -Talon
-[Exclusive to the Japanese Operation Combination line]
 Jet Corps:
 -Scrash
 -Dark Jet
@@ -1129,7 +1115,8 @@ Non-Show Characters:
 MicroVerse:
 -Arachnid
 
-Decepticons: (via Machine Wars)
+1997 (Machine Wars)
+Decepticons:
 -Megaplex
 
 1998
@@ -1141,7 +1128,6 @@ Non-Show Characters:
 -Bantor
 -Noctorro
 -Torca
-[Exclusive to the Japanese Beast Wars II series]
 -Lio Convoy
 -Apache
 -Bighorn
@@ -1177,7 +1163,6 @@ Non-Show Characters:
 -Sky Shadow
 -Terragator
 -Vice Grip
-[Exclusive to the Japanese Beast Wars II series]
 -Galvatron
 -Megastorm (later Gigastorm)
 -Starscream (later Hellscream)
@@ -1208,7 +1193,6 @@ Non-Show Characters:
 -Sonar
 -Stinkbomb
 -Windrazor
-[Exclusive to the Japanese Beast Wars Neo series]
 -Big Convoy
 -Break
 -Bump
@@ -1227,7 +1211,6 @@ Non-Show Characters:
 -Sandstorm
 -Scarem
 -Scourge
-[Exclusive to the Japanese Beast Wars Neo series]
 -Magmatron
 -Archadis
 -Bazooka
@@ -1241,7 +1224,6 @@ Non-Show Characters:
 -Sling
 
 Unicron:
-[Exclusive to the Japanese Beast Wars Neo series]
 Blendtrons:
 -Drancon
 -Elephorca
@@ -1292,10 +1274,11 @@ Mutants:
 -Razor Claw
 -Soundwave
 
-Unicron: (Under the Beast Wars banner)
+2000 (Beast Wars)
+Unicron:
 -Shokaract
 
-2001
+2001 (Beast Machines)
 Maximals:
 Non-Show Characters:
 -Battle Unicorn
@@ -1409,14 +1392,6 @@ IDW:
 -Gizmo
 Kiss Players:
 -Autotrooper
-
-Decepticons:
-Alternators:
--Nemesis Prime
-Kiss Players:
--Legion
-
-Autobot-Allied Mini-Cons:
 Dinobots:
 -Knockdown
 -Terrorsaur
@@ -1426,7 +1401,12 @@ Night Rescue Team:
 -Firebot
 -Strongarm
 
-Decepticon-Allied Mini-Cons
+
+Decepticons:
+Alternators:
+-Nemesis Prime
+Kiss Players:
+-Legion
 Demolition Team:
 -Broadside
 -Sledge
@@ -1510,12 +1490,15 @@ Autobots:
 -Flak
 -Landshark
 -Magnum
--Hot Rod (via Henkei)
 -Screech
 IDW:
 -Flint
 -Piston
 -Switch
+
+2009 (Henkei)
+Autobots:
+-Hot Rod
 
 Decepticons:
 IDW:
@@ -1595,7 +1578,6 @@ NAILs:
 -Tappet
 
 ##Robots in Disguise##
-The first true new continuity (Beast Wars was set in the G1 continuity, albeit with all new characters and settings) after G1, Robots in Disguise was a reboot of the franchise while Hasbro prepared for the major Armada line. While not as profilic as the other continuities, Robots in Disguise has its place in the heart of the fandom.
 
 2000
 Autobots:
@@ -1631,7 +1613,7 @@ Fortress Maximus:
 -Fortress Maximus
 
 Predacons:
--Megatron/Galvatron
+-Megatron (a.k.a Galvatron)
 -Sky-Byte
 -Dark Scream
 -Gas Skunk
@@ -1680,7 +1662,6 @@ Decepticons:
 -Smokejumper
 
 ##Unicron Trilogy##
-Armada, Energon and Cybertron, three redubbed Japanese shows that were released by Hasbro over the span of some five years, was the main bulk of Transformers fiction after Robots in Disguise met the end of its run. Armada introduced new concepts, although the show was geared towards younger children. Energon was a sequel to Armada. Cybertron was made with the thought of being a new reboot, but was shoehorned as a sequel by Hasbro and Takara, handwaving all continuity problems as being caused by a black hole.
 
 2002 (Armada)
 Autobots:
@@ -1728,7 +1709,7 @@ Race Team/Skyboom Shield:
 -Dirt Boss
 -Downshift
 -Mirage
-Space Team/Requiem Blaster
+Space Team/Requiem Blaster:
 -Astroscope
 -Sky Blast
 -Payload
@@ -1753,7 +1734,7 @@ Unicron-Allied Mini-Cons:
 -Rook
 -Mirror
 
-2003 
+2003
 Autobots:
 -Overload
 -Sideswipe
@@ -1790,7 +1771,6 @@ Dreamwave:
 -Galvatron
 -Scourge
 -Thunderwing
-[exclusive to the Japanese Linkage series]
 -Ravenus
 
 Mini-Cons:
@@ -1827,10 +1807,9 @@ Night Attack Team:
 -Broadside
 -Fetch
 -Scattor
-Unicron-allied Mini-Cons
+Unicron-allied Mini-Cons:
 -Dead End
 -Run-Over
-[Exclusive to the Japanese Linkage series]
 Super Stunt Team:
 -Redline
 -Flat-Out
@@ -1851,11 +1830,10 @@ Aqua Raider Team (Unicron-allied):
 -Bilge
 -Freeboot
 -Sunburn
-[Exclusive to the Japanese Micron Booster line:]
 -Atlas
 -Rod
 
-2004 (Energon) Note: some appear in late 2003 and early 2005, but for sanity’s sake are all listed here.
+2004 (Energon)
 Autobots:
 -Beachcomber
 -Bulkhead
@@ -1940,7 +1918,6 @@ Autobot-allied Mini-Cons:
 Rapid Run’s Mini-Cons:
 -Nightcruz
 -Nightscream
-[Japanese-exclusive Micron Booster]
 -Accel
 -Beacon
 -Blitz
@@ -2045,7 +2022,7 @@ Sky Attack Team:
 Neutral:
 -Scrapmetal
 
-2006 
+2006
 Autobots:
 -Excellion
 -Hightail
@@ -2095,7 +2072,6 @@ Deep Space Team/Umbral Blaster:
 -Scrap Iron
 
 Unaligned Mini-Cons:
-[Japanese Micron Booster exclusive]
 -Bug General
 -Bug Drone
 -Bit
@@ -2170,13 +2146,13 @@ Ground Surveillance Team:
 -Treadshot
 
 ##Universe and Timelines##
-Running concurrent with the Armada line, the original ‘Universe’ toyline was full of repaints representing characters from Generation One and other universes in the Transformers multiverse. With accompanying fiction only released in conventions, Universe was a series geared specifically for the fans. When 3H enterprises folded, Fun Publications took the lead, introducing several new continuities (Shattered Glass and TransTech being two original ones they created, while Classics and Wings of Honor are G1-based continuities and as such will have their characters placed in the G1 section) as well as multiple dimension travelers. To save headache, any character introduced in the Universe and Timelines fiction not stated to be part of the three major continuities will be listed here. 
 
 2003 (Universe)
 Autobots:
 -Ratchet
 
-Decepticons/Unicron:
+Decepticons:
+Unicron:
 -Obsidian
 -Razorclaw
 -Reptilion
@@ -2207,7 +2183,8 @@ Micro-Protectobots:
 -Streetwise
 -Defensor
 
-Decepticons/Unicron:
+Decepticons:
+Unicron:
 -Caliburn
 -Megazarak
 -Nemesis Prime
@@ -2234,7 +2211,7 @@ Mini-Cons:
 Whirl’s Mini-Cons:
 -Skysickle (a.k.a. Makeshift)
 -Thunderstick (a.k.a. Gunbarrel)
-Ramjet’s Mini-Con Army
+Ramjet’s Mini-Con Army:
 -Gunbarrel
 -Terradive
 -Thunderclash
@@ -2259,7 +2236,8 @@ Micro-Railbots:
 Nexus Prime:
 -Skyfall
 
-Decepticons/Unicron:
+Decepticons:
+Unicron:
 -Frostbite
 
 2006
@@ -2289,7 +2267,7 @@ Maximals:
 Maximal Security Force:
 -Nitrostreak
 
-2007:
+2007
 Autobots:
 Nexus Prime:
 -Breakaway
@@ -2317,7 +2295,7 @@ Flamewar’s Army:
 -Thrasher
 
 Mini-Cons:
-Beta Maxx
+-Beta Maxx
 
 2008
 Autobots:
@@ -2448,7 +2426,6 @@ Shattered Glass Autobots:
 -Warpath
 
 ##Live-Action Movies##
-In 2007 the well-received live-action Transformers movie hit theatres, bringing Transformers back as an iconic brand to the main public. This spawned two sequel movies in 2009 and 2011, as well as a plethora of toys. Several sub-lines, for lack of any fiction, all toys from the 2010 Transformers line and Power Core Combiners not stated to be from Generation One are lumped in here.
 
 2007 (Transformers the Movie)
 Autobots:
@@ -2510,7 +2487,6 @@ Neutrals:
 -Dispensor
 
 Autobot Allied Mini-Cons:
-[Japanese Exclusive Micron Booster]
 -Apexus
 -Detectus
 -Gredator
@@ -2520,7 +2496,6 @@ Autobot Allied Mini-Cons:
 -Windrazor
 
 Decepticon Allied Mini-Cons:
-[Japanese Exclusive Micron Booster]
 -Chromebite
 -Drago Yell
 -Gnashteeh
@@ -2797,8 +2772,7 @@ Non-Show Characters:
 -Space Case
 -Vortex
 
-##Transformers: Animated##
-After the success of the 2007 movie, a new Transformers cartoon series produced by Hasbro and Cartoon Network was aired, and aimed to cater to both children and older fans alike. While well-received by fans, the show and the line did not survive as well in the public, and problems soon caused the series to be discontinued after the third season.
+##Animated##
 
 2008
 Autobots:
@@ -3036,7 +3010,6 @@ Stunticons:
 -Wildrider 
 
 ##Prime Continuity##
-After Animated, Hasbro decided to forego the constant rebooting, and created a new continuity with an extensive backstory with elements mainly drawn from Generation One and the Movie series, starting off with the cartoon ‘Transformers Prime’.
 
 2011 (Transformers: Prime)
 Autobots:
@@ -3084,7 +3057,6 @@ Non-Show Characters:
 -Flamewar
 -Rumble
 -Skywarp
-
 Other:
 -Nemesis Prime
 -Unicron

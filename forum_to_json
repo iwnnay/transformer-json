@@ -1,0 +1,159 @@
+#!/usr/bin/env ruby
+require 'json'
+
+class CannotBeNil < StandardError
+  def initialize fieldName
+    super msg: "#{fieldName} cannot be set to nil"
+  end
+end
+
+class NotAName < StandardError
+    def initialize(name)
+      super(msg: "Cannot set name from: #{name}")
+    end
+end
+
+class YearMustBeInt < StandardError
+    def initialize(val)
+      super(msg: "Year must be an integer, given: #{val}")
+    end
+end
+
+class NotAnAlliance < StandardError
+    def initialize(name)
+      super(msg: "Cannot set alliance from: #{name}")
+    end
+end
+
+class Extract
+  def self.continuity val
+    val.gsub(/#/,'').strip
+  end
+
+  def self.yearAndUniverse val
+    return [val.strip, nil] unless val.match('\(')
+    year, universe = val.split('(')
+
+    [year.strip, universe.sub(')', '').strip]
+  end
+
+  def self.alliance val
+    val = val.strip.sub(/:/,'')
+
+    raise NotAnAlliance.new(val) unless ['Autobots','Decepticons'].include? val
+    val
+  end
+
+  def self.team val
+    val.sub(/:$/, '').strip
+  end
+
+  def self.nameAndAlias val
+    return [val.strip, nil] unless val.match('a\.k\.a\.')
+
+    name, nickname = val.sub('a.k.a. ', '').sub(')', '').split('(')
+
+    [name.strip, nickname.strip]
+  end
+end
+
+class Transformer
+  def alliance val
+    raise CannotBeNil.new 'alliance' if val.nil?
+    @alliance = val
+  end
+
+  def name name
+    raise CannotBeNil.new 'name' if name.nil?
+    raise NotAName.new(name) if name[0] != '-'
+    @name = name.sub(/^-/,'')
+  end
+
+  def continuity(continuity)
+    raise CannotBeNil.new 'continuity' if continuity.nil?
+    @continuity = continuity
+  end
+
+  def year(year)
+    raise YearMustBeInt.new year unless year.to_i.to_s == year
+    raise CannotBeNil.new 'year' if year.nil?
+    @year = year.to_i
+  end
+
+  def team val
+    @team = val
+  end
+
+  def alias val
+    @alias = val
+  end
+
+  def universe val
+    raise CannotBeNil.new 'universe' if val.nil?
+    @universe = val
+  end
+
+  def validate!
+    raise CannotBeNil.new 'name' if !@name
+    raise CannotBeNil.new 'continuity' if !@continuity
+    raise CannotBeNil.new 'year' if !@year
+    raise CannotBeNil.new 'alliance' if !@alliance
+    raise CannotBeNil.new 'universe' if !@universe
+  end
+
+  def to_json options = nil
+    {
+      name: @name,
+      alias: @alias || nil,
+      continuity: @continuity,
+      year: @year,
+      alliance: @alliance,
+      team: @team || @alliance,
+      universe: @universe
+    }.to_json
+  end
+end
+
+transformers = []
+alliance = nil
+continuity = nil
+team = nil
+year = nil
+universe = nil
+
+File.open('forum_pruned.txt', 'r').each do |rawLine|
+  line = rawLine.strip
+  if line == ''
+    team = nil
+  elsif line[0] == '#'
+    continuity = Extract.continuity line
+  elsif line.match(/^\d{4}/)
+    reyear, universeRename = Extract.yearAndUniverse line
+    year = reyear
+    universe = universeRename if universeRename
+  elsif line.match(/^(Autobots|Decepticons):$/)
+    alliance = Extract.alliance line
+  elsif line[-1] == ':'
+    team = Extract.team line
+    p "setting team: #{team}"
+  else
+    name, nickname = Extract.nameAndAlias line
+
+    transformer = Transformer.new
+    transformer.name name
+    transformer.alias nickname
+    transformer.continuity continuity
+    transformer.year year
+    transformer.alliance alliance
+    transformer.universe universe
+    transformer.team team
+
+    transformer.validate!
+
+    transformers << transformer
+  end
+end
+
+File.open('transformers.json', 'w') do |f|
+  f.puts [transformers: transformers].to_json
+end
