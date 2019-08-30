@@ -148,7 +148,7 @@ Autobots:
 Junkions:
 -Wreck-Gar
 -Junkyard
--Scrapheap 
+-Scrapheap
 Protectobots:
 -Hot Spot
 -Blades
@@ -188,7 +188,7 @@ Decepticons:
 -Macabre
 -Trannis
 Cassettecons:
--Ratbat 
+-Ratbat
 Combaticons:
 -Onslaught
 -Blast Off
@@ -2788,7 +2788,7 @@ The Elite Guard:
 -Ultra Magnus
 -Sentinel Prime
 -Jazz
--Blurr 
+-Blurr
 Cybertron Military:
 -Arcee
 -Cliffjumper
@@ -3007,7 +3007,7 @@ Stunticons:
 -Breakdown
 -Drag Strip
 -Dead End
--Wildrider 
+-Wildrider
 
 ##Prime Continuity##
 
