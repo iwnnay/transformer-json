@@ -1,1 +1,140 @@
 #!/usr/bin/env ruby
+require 'json'
+require 'csv'
+# Since we know what the input structure is flat we can pull those values out in maps
+# Example mapping object should be JSON for now
+# {
+#   "settings": {
+#     "output": string (json,csv) - defaults to json
+#     "envelope": string - defaults to transformers, only applies to JSON format
+#   },
+#   "map": {
+#     "new_field": "from_data_field",
+#     "new_field2": [
+#       "subField": "from_data_field2"
+#     ],
+#     {
+#       "method": "nameOfTransformingMethod",
+#       ... arguments ...
+#     }
+#   }
+# }
+#
+# Methods:
+#   email(format) - Uses format to create an email
+#
+class Formatter
+  def self.format_transformer_by_options val, options
+    raise StandardError.new "Invalid formatter #{options}" unless self.respond_to? options['method']
+    self.send(options['method'], val, options)
+  end
+
+  def self.email val, options
+    email = ''
+    self.parse_format(options['format']).each do |piece|
+      if piece.is_a? Symbol
+        email << self.safe_string(val[piece.to_s]).downcase
+      else
+        email << piece
+      end
+    end
+
+    email
+  end
+
+  def self.parse_format format
+    pieces = []
+    is_key = false
+    current = ''
+    format.split('').each do |letter|
+      if letter == '{'
+        is_key = true
+        pieces << current unless current.empty?
+        current = ''
+      elsif letter == '}'
+        is_key = false
+        pieces << current.to_sym unless current.empty?
+        current = ''
+      else
+        current << letter
+      end
+    end
+
+    pieces.reject { |c| c.empty? } << current
+  end
+
+  def self.safe_string val
+    val.to_s.sub('\(.*', '').gsub(/[’"'` ]/, '').gsub(/\s/, '_').strip
+  end
+end
+
+class Mapper
+  def initialize(options)
+    @settings = options['settings']
+    @map = options['map']
+    @output = []
+  end
+
+  def self.display_usage
+    p " Usage: mapper <mapping_file_name>"
+  end
+
+  def map_transformer transformer, submap = false
+    item = {}
+    map = submap || @map
+
+    map.each do |field_name, map_info|
+      if map_info.is_a? Array
+        raise StandardError.new 'CSV file mapping must be flat' if is_csv?
+        item[field_name] = map_transformer transformer, map_info
+      elsif map_info.is_a? Hash
+        item[field_name] = Formatter.format_transformer_by_options transformer, map_info
+      else
+        item[field_name] = transformer[map_info]
+      end
+    end
+
+    @output << item
+  end
+
+  def write_file
+    is_csv? ? write_csv : write_json
+  end
+
+  def is_csv?
+    @settings['output'].downcase == 'csv'
+  end
+
+  def filename
+    __dir__ << '/data/' << @settings['filename'] << (is_csv? ? '.csv' : '.json')
+  end
+
+  def write_csv
+    CSV.open(filename, 'wb') do |csv|
+      csv << @output.first.keys
+      @output.each { |r| csv << r.values }
+    end
+  end
+
+  def write_json
+    data = {}
+    data[@settings['envelope'] || 'transformers'] = @output
+    File.open(filename, 'w') { |f| f.write(data.to_json) }
+  end
+end
+
+unless ARGV.length
+  Mapper.display_usage
+  exit 1
+end
+
+mapper_file = ARGV.first
+map_config = JSON.load(File.open(__dir__ + "/maps/#{mapper_file}.json"))
+transformers = JSON.load(File.open(__dir__ + "/transformers.json"))['transformers']
+map_config['settings']['filename'] = mapper_file
+
+mapper = Mapper.new map_config
+
+transformers.each { |transformer| mapper.map_transformer transformer }
+
+mapper.write_file
