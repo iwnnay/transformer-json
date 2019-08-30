@@ -1,0 +1,17 @@
+{
+  "settings": {
+    "output": "csv",
+    "envelope": null
+  },
+  "map": {
+      "FirstName": "name",
+      "Organization": "alliance",
+      "Email": { "method": "email", "format": "{name}-{year}@{alliance}.com" },
+      "Alias": "alias",
+      "Team": "team",
+      "Universe": "universe",
+      "continuity": "continuity",
+      "year": "year"
+  }
+}
+
