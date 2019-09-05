@@ -76,7 +76,13 @@ class Mapper
   end
 
   def self.display_usage
-    p " Usage: mapper <mapping_file_name>"
+    p " Usage: mapper <mapping_file_name>
+
+      To see this work try running:
+        mapper example_csv
+
+      Look in the data folder for output
+    "
   end
 
   def map_transformer transformer, submap = false
@@ -123,7 +129,7 @@ class Mapper
   end
 end
 
-unless ARGV.length
+if ARGV.length == 0
   Mapper.display_usage
   exit 1
 end
